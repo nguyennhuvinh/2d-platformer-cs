@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Ground
+  - Obstacle
+  - CheckPoint
   layers:
   - Default
   - TransparentFX
@@ -11,7 +14,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Ground
   - 
   - 
   - 
@@ -44,9 +47,18 @@ TagManager:
   - name: Background
     uniqueID: 4074688533
     locked: 0
-  - name: Wall
-    uniqueID: 1110499917
+  - name: Tele
+    uniqueID: 1412848489
     locked: 0
   - name: Player
     uniqueID: 80575771
+    locked: 0
+  - name: CheckPoint
+    uniqueID: 908842199
+    locked: 0
+  - name: Ground
+    uniqueID: 1110499917
+    locked: 0
+  - name: Particle
+    uniqueID: 2713062585
     locked: 0
