@@ -56,8 +56,11 @@ TagManager:
   - name: CheckPoint
     uniqueID: 908842199
     locked: 0
-  - name: Ground
+  - name: Spike
     uniqueID: 1110499917
+    locked: 0
+  - name: Ground
+    uniqueID: 986554651
     locked: 0
   - name: Particle
     uniqueID: 2713062585
