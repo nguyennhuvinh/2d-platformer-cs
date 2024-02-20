@@ -19,6 +19,14 @@ public class ParticalController : MonoBehaviour
 
     [SerializeField] ParticleSystem fallParticle;
 
+    AudioManager audioManager;
+
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
+
     private void Update()
     {
         counter += Time.deltaTime;
@@ -27,6 +35,7 @@ public class ParticalController : MonoBehaviour
         {
             if(counter > dustFormationPeriod)
             {
+                
                 moveParticle.Play();
                 counter = 0;
             }
@@ -37,6 +46,7 @@ public class ParticalController : MonoBehaviour
     {
         if (collision.CompareTag("Ground"))
         {
+            audioManager.PlayerSFX(audioManager.Jump);
             fallParticle.Play();
             isOnGround = true;
         }

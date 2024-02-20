@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8398989348361461812}
   - component: {fileID: 4358823292453691721}
-  - component: {fileID: 5496116134595929981}
   - component: {fileID: 6022690166068045253}
+  - component: {fileID: 309624672176171728}
   m_Layer: 0
   m_Name: CheckPoint
   m_TagString: CheckPoint
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 908842199
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -3708508325519384304, guid: f73dfe034c22cfc41bd7e8799020a5ac, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
@@ -87,8 +87,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &5496116134595929981
-BoxCollider2D:
+--- !u!114 &6022690166068045253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4571379513150301840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_ComponentVersion: 1
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 0000000015d0def21b7dcd04d7d42b364de23042b90cb6a1
+  m_ShapePath:
+  - {x: -0.3139359, y: -0.5000003, z: 0}
+  - {x: -0.31141478, y: -0.43585587, z: 0}
+  - {x: -0.2526441, y: -0.43722394, z: 0}
+  - {x: -0.2537324, y: -0.3689767, z: 0}
+  - {x: -0.12661096, y: -0.36736056, z: 0}
+  - {x: -0.12700923, y: 0.50588405, z: 0}
+  - {x: 0.37448367, y: 0.5111583, z: 0}
+  - {x: 0.37317207, y: 0.438495, z: 0}
+  - {x: 0.4385658, y: 0.4405119, z: 0}
+  - {x: 0.44072932, y: 0.058542524, z: 0}
+  - {x: 0.37217027, y: 0.058542524, z: 0}
+  - {x: 0.3755862, y: 0.0015194397, z: 0}
+  - {x: 0.06134317, y: -0.0022724916, z: 0}
+  - {x: 0.06446457, y: -0.37501204, z: 0}
+  - {x: 0.25367436, y: -0.37304795, z: 0}
+  - {x: 0.25155476, y: -0.433291, z: 0}
+  - {x: 0.31438503, y: -0.43311974, z: 0}
+  - {x: 0.31393272, y: -0.50005966, z: 0}
+  m_ShapePathHash: -887642694
+  m_Mesh: {fileID: 0}
+  m_InstanceId: 80910
+  m_LocalBounds:
+    m_Center: {x: 0.06339672, y: 0.0055493116, z: 0}
+    m_Extent: {x: 0.37733263, y: 0.505609, z: 0}
+--- !u!68 &309624672176171728
+EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -119,59 +163,32 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.1271345, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.39778507, y: 1}
+  m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
---- !u!114 &6022690166068045253
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4571379513150301840}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ShadowGroup: 0
-  m_ComponentVersion: 1
-  m_HasRenderer: 1
-  m_UseRendererSilhouette: 1
-  m_CastsShadows: 1
-  m_SelfShadows: 0
-  m_ApplyToSortingLayers: 0000000015d0def21b7dcd04d7d42b364de23042b90cb6a1
-  m_ShapePath:
-  - {x: -0.3139359, y: -0.5000003, z: 0}
-  - {x: -0.31141478, y: -0.43585587, z: 0}
-  - {x: -0.2526441, y: -0.43722394, z: 0}
-  - {x: -0.2537324, y: -0.3689767, z: 0}
-  - {x: -0.12661096, y: -0.36736056, z: 0}
-  - {x: -0.13793506, y: 0.51569414, z: 0}
-  - {x: 0.46254498, y: 0.51569414, z: 0}
-  - {x: 0.45750517, y: -0.023986798, z: 0}
-  - {x: 0.048856497, y: -0.027778385, z: 0}
-  - {x: 0.048856497, y: -0.35735387, z: 0}
-  - {x: 0.25367436, y: -0.37304795, z: 0}
-  - {x: 0.25155476, y: -0.433291, z: 0}
-  - {x: 0.31438503, y: -0.43311974, z: 0}
-  - {x: 0.31393272, y: -0.50005966, z: 0}
-  m_ShapePathHash: -1703117432
-  m_Mesh: {fileID: 0}
-  m_InstanceId: -18948
-  m_LocalBounds:
-    m_Center: {x: 0.07430455, y: 0.007817209, z: 0}
-    m_Extent: {x: 0.38824046, y: 0.5078769, z: 0}
+  m_Points:
+  - {x: 0.31546453, y: -0.49928182}
+  - {x: -0.31169084, y: -0.4985746}
+  - {x: -0.31148723, y: -0.4351473}
+  - {x: -0.25214195, y: -0.43706506}
+  - {x: -0.2520835, y: -0.3683529}
+  - {x: -0.12603591, y: -0.3687897}
+  - {x: -0.12322435, y: 0.5012896}
+  - {x: 0.37359977, y: 0.5027344}
+  - {x: 0.37655407, y: 0.43761042}
+  - {x: 0.4378271, y: 0.43877774}
+  - {x: 0.43779325, y: 0.06145399}
+  - {x: 0.3753623, y: 0.0625949}
+  - {x: 0.3754442, y: 0.0001026555}
+  - {x: 0.0662041, y: 0.00019529462}
+  - {x: 0.06530551, y: -0.3716696}
+  - {x: 0.2505076, y: -0.3754629}
+  - {x: 0.25111714, y: -0.43215728}
+  - {x: 0.3147794, y: -0.43436053}
+  - {x: 0.31560174, y: -0.49373442}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &7456640706017482360
 GameObject:
   m_ObjectHideFlags: 0

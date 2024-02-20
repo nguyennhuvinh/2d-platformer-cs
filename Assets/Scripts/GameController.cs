@@ -7,9 +7,12 @@ public class GameController : MonoBehaviour
     Vector2 checkpointPos;
     Rigidbody2D playerRb;
     public Transform respawnPoint;
-   
+    AudioManager audioManager;
 
-   
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
 
     private void Start()
     {
@@ -21,11 +24,12 @@ public class GameController : MonoBehaviour
     {
         if (collision.CompareTag("Obstacle"))
         {
+            audioManager.PlayerSFX(audioManager.death);
             Die();
         }
         else if (collision.tag == "CheckPoint")
         {
-            
+            audioManager.PlayerSFX(audioManager.checkpoint);
             UpdateCheckpoint(respawnPoint.position);
             
         }

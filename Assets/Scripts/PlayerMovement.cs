@@ -15,6 +15,12 @@ public class PlayerMovement : MonoBehaviour
    
     public LayerMask groundLayer;
 
+    AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
 
     private void Start()
     {
@@ -57,6 +63,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
+            audioManager.PlayerSFX(audioManager.Jump);
             rb.velocity = new Vector2(rb.velocity.x, jumpPower);
         }
     }
