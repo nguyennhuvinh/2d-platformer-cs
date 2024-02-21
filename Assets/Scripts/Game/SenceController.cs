@@ -7,7 +7,7 @@ public class SenceController : MonoBehaviour
 {
     public static SenceController instance;
 
-    [SerializeField] Animator transitionAnim;
+   
     private void Awake()
     {
         if (instance == null)
@@ -28,10 +28,10 @@ public class SenceController : MonoBehaviour
 
     IEnumerator LoadLevel()
     {
-        transitionAnim.SetTrigger("End");
+      
         yield return new WaitForSeconds(1);
         SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
-        transitionAnim.SetTrigger("Start");
+      
     }
    
 }

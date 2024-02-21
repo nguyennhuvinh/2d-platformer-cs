@@ -18,6 +18,7 @@ public class ParticalController : MonoBehaviour
     bool isOnGround;
 
     [SerializeField] ParticleSystem fallParticle;
+    [SerializeField] ParticleSystem deathParticle;
 
     AudioManager audioManager;
 
@@ -49,6 +50,11 @@ public class ParticalController : MonoBehaviour
             audioManager.PlayerSFX(audioManager.Jump);
             fallParticle.Play();
             isOnGround = true;
+        }
+
+        if (collision.CompareTag("Obstacle"))
+        {
+            deathParticle.Play();
         }
     }
 

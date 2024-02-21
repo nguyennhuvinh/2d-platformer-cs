@@ -6,7 +6,6 @@ public class GameController : MonoBehaviour
 {
     Vector2 checkpointPos;
     Rigidbody2D playerRb;
-    public Transform respawnPoint;
     AudioManager audioManager;
 
     private void Awake()
@@ -27,12 +26,7 @@ public class GameController : MonoBehaviour
             audioManager.PlayerSFX(audioManager.death);
             Die();
         }
-        else if (collision.tag == "CheckPoint")
-        {
-            audioManager.PlayerSFX(audioManager.checkpoint);
-            UpdateCheckpoint(respawnPoint.position);
-            
-        }
+        
     }
 
     public void UpdateCheckpoint(Vector2 pos)
